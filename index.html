@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Css</title>
+        <style>
+            [href$=a]{
+                color: red;
+            }
+
+            [href*=h]{
+                color: burlywood;
+            }
+
+            [data-style~='colors'] {
+                color: red;
+            }
+
+            [data-style~='COLORS' i]::before{
+                content: 'Insensitive color:';
+                color: black;
+            }
+
+            [data-style~='COLORS']::before{
+                content: 'Sensitive color:';
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Introdusing Css</h1>
+        <div> this is a block element</div>
+
+        <ul>
+            <li>
+                <a href="#a">
+                    <span>Go no where</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://google.com">
+                    <span>Google</span>
+                </a>
+            </li>
+        </ul>
+
+        <div data-style="colors">
+            coloring with special attribute
+        </div>
+    </body>
+</html>
