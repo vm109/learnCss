@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div > * + * > strong{
+                color: pink;
+            }
+
+            div > p > strong { 
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <strong>
+                Testing higlighted text
+            </strong>
+            <p>
+                This is 1st child paragraph of div element.
+                <strong>this is highlighted text</strong>
+            </p>
+
+            <p>
+                this is 2nd child paragraph of div element.
+                <strong>this is highlighted text</strong>
+            </p>
+
+            <div> this is a div elelement in div</div>
+        </div>
+
+        <p>
+            Will this paragraph also get highlighted?
+        </p>
+
+        <div>
+            <p>
+                first paragraph: <strong>highlight text</strong>
+            </p>
+
+            <p>
+                second paragraph: <strong>highlight text</strong>
+            </p>
+        </div>
+    </body>
+</html>

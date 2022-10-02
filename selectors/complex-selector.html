@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p:nth-child(even){
+                color: blueviolet;
+            }
+
+            p:nth-child(odd){
+                color: darkseagreen;
+            }
+
+            p strong {
+                color: black;
+            }
+
+            .top {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 2em;
+            }
+
+            .top div{
+                padding: 1em;
+            }
+
+            .top p{
+                padding: 1em;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is first paragraph</p>
+        <p>this is second paragraph</p>
+        <p>
+            example of strong
+            <strong>To make content bold we use strong</strong>
+        </p>
+
+        <div class="top box">
+            <div>
+                div element
+            </div>
+            <p> pargraph element</p>
+        </div>
+    </body>
+</html>
