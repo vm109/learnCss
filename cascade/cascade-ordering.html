@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p {
+                color: pink;
+            }
+        </style>
+        <link rel="stylesheet" href="cascade-ordering-link.css"/>
+    </head>    
+<body>
+    <p>First Paragraph - lets apply style with position</p>
+    <p>Second Paragraph - lets apply style with position</p>
+    <p style="color:yellowgreen"> Third paragraph - inline style will take precedence</p>
+
+    <div>
+        <p id="specific_id" class="specific_class" data-specificity="specific_data">Testing specifity</p>
+    </div>
+</body>
+</html>

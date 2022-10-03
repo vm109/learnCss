@@ -1,0 +1,39 @@
+/* very specific selector - 
+  - specifity takes precedence over position*/
+
+.specific_class[data-specificity~="specific_data"i]{
+    color: red;
+    border: purple double 2px;
+    padding: 2rem;
+    font-style: normal;
+    font-size: clamp(1em, 1vw, 2em);
+    display: inline-block;
+} 
+
+p::before{
+    content: 'this is added by pseudo element ::before - ';
+}
+
+p {
+    color: blue;
+    display: inline-block;
+    margin: 1rem;
+    border: solid black 1px;
+    padding: 1rem;
+    font-size: clamp(1rem, 5vh, 1.5rem);
+    font-style: italic;
+}
+
+/* since this is the last style for p, purple color is applied to all paragraph */
+p:nth-child(odd){
+    color: purple;
+}
+
+p:nth-child(even){
+    color: darkgoldenrod;
+}
+
+#specific_id:hover{
+    color: navajowhite;
+}
+
